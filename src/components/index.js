@@ -1,3 +1,4 @@
 import ListOption from './ListOptions';
-
-export {ListOption}
+import Timer from "./Timer";
+import CounterFunction from './Counter';    
+export {ListOption, Timer, CounterFunction}

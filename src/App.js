@@ -1,5 +1,7 @@
-import { ListOption } from "./components";
-/*import { useState } from "react";
+//import { Timer } from "./components";
+import { CounterFunction} from "./components";
+/*import { ListOption } from "./components";
+import { useState } from "react";
 import ListOption from "./components/ListOptions";
 //import TestingLifeCycle from './widgets/TestingLifeCycle';
 function App() {
@@ -49,11 +51,12 @@ const ErrorMessage = () => {
   )
 };
 */
+/*
 function App(){
   const isList = true;
-  /*if(isList === false){
+  if(isList === false){
     return <ErrorMessage/>
-  }*/
+  }
 const days =[
   {id: 1, nombre: "Lunes"}, 
   {id: 2, nombre: "Martes"}, 
@@ -67,13 +70,25 @@ const days =[
       )}
     </ul>
 
-    /*<ul>
+    <ul>
       <ListOption  tiempo= "frío">Lunes</ListOption>
       <ListOption>Martes</ListOption>
       <ListOption>Miércoles</ListOption>
       <ListOption>Jueves</ListOption>
       <ListOption>Viernes</ListOption>
-    </ul>*/
+    </ul>
+  );
+}*/
+/*
+function App (){
+  return(
+    <Timer/>
+  );
+}*/
+
+function App(){
+  return (
+  <CounterFunction/>
   );
 }
 
