@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, {useRef} from "react";
 
 const FormControlado = () =>{
-    const [value, setValue] = useState("");
+   /* Formulario controlado
+     const [value, setValue] = useState("");
 
     const onChange = (event)=>{
         setValue(event.currentTarget.value);
@@ -18,6 +19,21 @@ const FormControlado = () =>{
             <input value={value} onChange={onChange}/>
             <button type ="submit" >Continuar</button>
         </form>
+    )*/
+
+
+    const inputRef = useRef();
+
+    const onClickButton =() =>{
+        console.log(inputRef.current.value)
+    }
+
+    return(
+        <div>
+            <h1>Mi input</h1>
+            <input ref={inputRef}/>
+            <button onClick={onClickButton}>Continuar</button>
+        </div>
     )
 }
 
