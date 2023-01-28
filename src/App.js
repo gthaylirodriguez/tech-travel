@@ -1,5 +1,6 @@
 //import { Timer } from "./components";
-import { CounterFunction} from "./components";
+//import { CounterFunction} from "./components";
+import {FormControl, FormControlado} from "./components";
 /*import { ListOption } from "./components";
 import { useState } from "react";
 import ListOption from "./components/ListOptions";
@@ -85,11 +86,17 @@ function App (){
     <Timer/>
   );
 }*/
-
+/*
 function App(){
   return (
   <CounterFunction/>
   );
+}*/
+
+function App(){
+  return (
+    <FormControlado/>
+    );
 }
 
 export default App;
